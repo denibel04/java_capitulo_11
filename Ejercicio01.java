@@ -8,7 +8,7 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
+
 public class Ejercicio01 {
     public static void main (String[] args) {
         boolean primo;
