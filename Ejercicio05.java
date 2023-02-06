@@ -28,7 +28,7 @@ public class Ejercicio05 {
                 int l = lineaOrigen.length();
                 lineaDestino = lineaOrigen;
 
-
+                // Detecta inicio de comentario de bloque
                 if ((i = lineaOrigen.indexOf("/*")) != -1) {
                     lineaDestino = "";
                     for(int cont = 0; cont < lineaOrigen.length(); cont++){
@@ -40,7 +40,7 @@ public class Ejercicio05 {
                             comentarioDeBloque=false;
                             cont++;
                         }
-                        else if(!comentarioDeBloque && lineaOrigen.charAt(cont)=='/' && lineaOrigen.charAt(cont)=='/'){
+                        else if(!comentarioDeBloque && lineaOrigen.charAt(cont)=='/'){
                             break;
                         }
                         else if(!comentarioDeBloque){
